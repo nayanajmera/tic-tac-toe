@@ -1,0 +1,59 @@
+/* Improved CSS:- */
+button{
+    height: 7rem;
+    width : 7rem;
+    background-color: white;
+    font-size: 3em; /* Adjust font size for button text */
+    text-align: center; /* Center align text within button */
+    vertical-align: top; /* Align buttons properly in a row. This line actually SOLVED THE PROBLEM OF BOX COMING DOWN ON ENTERING A TEXT
+    So this line is very important : vertical-align : top; */
+}
+button:active{
+    background-color: black;
+    color : white;
+}
+#abs{
+    height : 7.2rem;
+    width : 7.2rem;
+    background-image: url(360_F_16362823_JyBzUKqSQHzfT5c64vRYVbGrvAKpyHb7.webp);
+    background-size: cover;
+    display: none;
+    position : relative;
+    box-shadow : 5px 5px 10px black;
+    left : 7rem;
+    bottom : 14rem;
+    z-index: 2;
+}
+#abs:active{
+    height: 7rem;
+    width : 7rem;
+    box-shadow:2px 2px 7.5px black;
+}
+.game{
+    height: 21rem;
+    width : 21rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+#button0, #button3, #button6{
+    border-left : none;
+   }
+   #button2, #button5, #button8{
+      border-right : none;
+     }
+   #button0, #button1, #button2{
+    border-top : none;
+   }
+   #button6, #button7, #button8
+   {
+      border-bottom : none;
+   }
+body{
+    display : flex;
+    justify-content: center;
+    height : 100vh;
+    align-items: center;
+}
+h2{
+    text-align: center;
+}
