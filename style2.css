@@ -12,6 +12,17 @@ button:active{
     background-color: black;
     color : white;
 }
+.choose{
+    height : 3em;
+    width : 10em;
+    display : inline;
+    font-size: 1em;
+    margin : 1em;
+}
+/* #choose-btn-1-1, #choose-btn-1-2{
+    position:relative;
+    right : 24.5em;
+} */
 #abs{
     height : 7.2rem;
     width : 7.2rem;
@@ -56,4 +67,109 @@ body{
 }
 h2{
     text-align: center;
+}
+.set-display-none{
+    display : none;
+}
+@media(max-width : 370px){
+    button{
+        height: 6rem;
+        width : 6rem;
+        background-color: white;
+        font-size: 3em; /* Adjust font size for button text */
+        text-align: center; /* Center align text within button */
+        vertical-align: top; /* Align buttons properly in a row. This line actually SOLVED THE PROBLEM OF BOX COMING DOWN ON ENTERING A TEXT
+        So this line is very important : vertical-align : top; */
+    }
+    .game{
+        height: 18rem;
+        width : 18rem;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #abs{
+        height : 6.2rem;
+        width : 6.2rem;
+        background-image: url(360_F_16362823_JyBzUKqSQHzfT5c64vRYVbGrvAKpyHb7.webp);
+        background-size: cover;
+        display: none;
+        position : relative;
+        box-shadow : 5px 5px 10px black;
+        left : 6rem;
+        bottom : 12rem;
+        z-index: 2;
+    }
+    #abs:active{
+        height: 6rem;
+        width : 6rem;
+        box-shadow:2px 2px 7.5px black;
+    }
+}
+@media(max-width : 310px){
+    button{
+        height: 5rem;
+        width : 5rem;
+        background-color: white;
+        font-size: 2.5em; /* Adjust font size for button text */
+        text-align: center; /* Center align text within button */
+        vertical-align: top; /* Align buttons properly in a row. This line actually SOLVED THE PROBLEM OF BOX COMING DOWN ON ENTERING A TEXT
+        So this line is very important : vertical-align : top; */
+    }
+    .game{
+        height: 15rem;
+        width : 15rem;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #abs{
+        height : 5.1rem;
+        width : 5.1rem;
+        background-image: url(360_F_16362823_JyBzUKqSQHzfT5c64vRYVbGrvAKpyHb7.webp);
+        background-size: cover;
+        display: none;
+        position : relative;
+        box-shadow : 5px 5px 10px black;
+        left : 5rem;
+        bottom : 10rem;
+        z-index: 2;
+    }
+    #abs:active{
+        height: 5rem;
+        width : 5rem;
+        box-shadow:2px 2px 7.5px black;
+    }
+}
+@media(max-width : 260px){
+    button{
+        height: 4rem;
+        width : 4rem;
+        background-color: white;
+        font-size: 2em; /* Adjust font size for button text */
+        text-align: center; /* Center align text within button */
+        vertical-align: top; /* Align buttons properly in a row. This line actually SOLVED THE PROBLEM OF BOX COMING DOWN ON ENTERING A TEXT
+        So this line is very important : vertical-align : top; */
+    }
+    .game{
+        height: 12rem;
+        width : 12rem;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #abs{
+        height : 4.1rem;
+        width : 4.1rem;
+        background-image: url(360_F_16362823_JyBzUKqSQHzfT5c64vRYVbGrvAKpyHb7.webp);
+        background-size: cover;
+        display: none;
+        position : relative;
+        box-shadow : 5px 5px 10px black;
+        left : 4rem;
+        bottom : 8rem;
+        z-index: 2;
+    }
+    #abs:active{
+        height: 4rem;
+        width : 4rem;
+        box-shadow:2px 2px 7.5px black;
+    }
 }
